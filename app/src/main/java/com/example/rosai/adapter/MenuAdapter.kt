@@ -1,6 +1,9 @@
 package com.example.rosai.adapter
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
+
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.rosai.databinding.MenuitemBinding
@@ -8,7 +11,8 @@ import com.example.rosai.databinding.MenuitemBinding
 class MenuAdapter(
     private val menuItemsName: MutableList<String>,
     private val menuItemPrice: MutableList<String>,
-    private val menuImageName: MutableList<Int>
+    private val MenuImage: MutableList<Int>,
+    private val requireContext: Context
 ) : RecyclerView.Adapter<MenuAdapter.MenuViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuViewHolder {
@@ -17,16 +21,31 @@ class MenuAdapter(
     }
 
     override fun onBindViewHolder(holder: MenuViewHolder, position: Int) {
-        holder.bind(menuItemsName[position], menuItemPrice[position], menuImageName[position])
+        holder.bind(position)
     }
 
     override fun getItemCount(): Int = menuItemsName.size
 
-    class MenuViewHolder(private val binding: MenuitemBinding) : RecyclerView.ViewHolder(binding.root) {
-        fun bind(foodName: String, price: String, imageResId: Int) {
-            binding.menuFoodName.text = foodName
-            binding.menuprice.text = price
-            binding.menuimage.setImageResource(imageResId)
+    inner class MenuViewHolder(private val binding: MenuitemBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+
+        fun bind(position: Int) {
+            binding.apply {
+//                menuFoodName.text = menuItemsName[position]
+//                menuprice.text = menuItemPrice[position]
+//                menuimage.setImageResource(MenuImage[position])
+//                setonclick listner to open details
+//                val intent = Intent(requireContext, detailsActivity::class.java)
+//                intent.putExtra("MenuItemName", menuItemsName.get(position))
+//                intent.putExtra("MenuItemImage", MenuImage.get(position))
+//                requireContext.startActivity(intent)
+            }
+
         }
     }
+
+
+
 }
+
+

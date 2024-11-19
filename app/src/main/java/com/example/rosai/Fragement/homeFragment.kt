@@ -65,7 +65,7 @@ class homeFragment : Fragment() {
         val items = listOf("Item 1", "Item 2", "Item 3") // Replace with your data
         val images = listOf(R.drawable.menu1, R.drawable.menu2, R.drawable.menu3) // Replace with your image resources
         val prices = listOf(100, 200, 300)
-        val adapter = AdapterPopular(items, prices, images)
+        val adapter = AdapterPopular(items, prices, images,requireContext())
 
         recyclerView.adapter = adapter
 

@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.google.gms.google.services)
 }
 
 android {
@@ -50,10 +51,15 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.play.services.ads.lite)
     implementation(libs.androidx.room.ktx)
+    implementation(libs.firebase.auth)
+    implementation("com.google.android.gms:play-services-auth:20.2.0")
+
+    implementation(libs.firebase.database)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation ("com.github.denzcoskun:ImageSlideshow:0.1.2")
     implementation ("com.google.android.gms:play-services-ads:23.3.0")
+
 
 }

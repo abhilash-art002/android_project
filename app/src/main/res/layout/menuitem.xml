@@ -7,11 +7,14 @@
     android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="323dp"
+        android:layout_width="350dp"
         android:layout_height="87dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         app:cardCornerRadius="22dp"
+        app:cardElevation="6dp"
         app:circularflow_radiusInDP="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -19,17 +22,19 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:elevation="10dp">
+            >
 
             <ImageView
                 android:id="@+id/menuimage"
-                android:layout_width="49dp"
-                android:layout_height="62dp"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="8dp"
                 android:layout_marginStart="8dp"
-                android:scaleType="centerCrop"
+                android:scaleType="fitCenter"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.478"
                 app:srcCompat="@drawable/menu1" />
 
             <TextView
@@ -64,7 +69,7 @@
                 app:layout_constraintBottom_toBottomOf="@+id/menuimage"
                 app:layout_constraintStart_toEndOf="@+id/menuimage"
                 app:layout_constraintTop_toTopOf="@+id/menuimage"
-                app:layout_constraintVertical_bias="0.279" />
+                 />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

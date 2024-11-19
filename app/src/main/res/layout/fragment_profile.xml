@@ -111,7 +111,7 @@
                 android:ems="10"
                 android:inputType="textEmailAddress"
                 android:minHeight="48dp"
-                android:text="manoj123@gamil.com" />
+                android:text="rosai123@gamil.com" />
         </LinearLayout>
 
         <LinearLayout

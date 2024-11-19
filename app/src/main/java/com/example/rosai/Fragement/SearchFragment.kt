@@ -42,7 +42,7 @@ class SearchFragment : Fragment() {
         binding = FragmentSearchBinding.inflate(inflater, container, false)
 
         // Set up the adapter with the initial (filtered) menu data
-        adapter = MenuAdapter(filterMenuFoodName, filterMenuItemPrice, filterMenuImage)
+        adapter = MenuAdapter(filterMenuFoodName, filterMenuItemPrice, filterMenuImage,requireContext())
         binding.searchrecycleview.layoutManager = LinearLayoutManager(requireContext())
         binding.searchrecycleview.adapter = adapter
 

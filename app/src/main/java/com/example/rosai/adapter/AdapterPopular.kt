@@ -1,12 +1,14 @@
 package com.example.rosai.adapter
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.rosai.R
 import com.example.rosai.databinding.PopularitemsBinding
 
-class AdapterPopular(private val items: List<String>, private val price: List<Int>, private val image: List<Int>) : RecyclerView.Adapter<AdapterPopular.AdapterViewHolder>() {
+class AdapterPopular(private val items: List<String>, private val price: List<Int>, private val image: List<Int> ,private val requireContext:Context) : RecyclerView.Adapter<AdapterPopular.AdapterViewHolder>() {
 
 
     class AdapterViewHolder(private val binding: PopularitemsBinding) : RecyclerView.ViewHolder(binding.root) {
@@ -33,7 +35,7 @@ class AdapterPopular(private val items: List<String>, private val price: List<In
         val images = image[position]
         val price = price[position]
         holder.bind(item, price.toString(),images)
-    }
+   }
 
     // Return the size of the dataset (invoked by the layout manager)
     override fun getItemCount():Int{

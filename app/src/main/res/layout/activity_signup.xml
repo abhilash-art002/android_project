@@ -120,7 +120,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button3"
+        android:id="@+id/facebookButton"
         android:layout_width="116dp"
         android:layout_height="45dp"
         android:layout_marginStart="60dp"
@@ -136,7 +136,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button4"
+        android:id="@+id/googleButton"
         android:layout_width="115dp"
         android:layout_height="42dp"
         android:layout_marginTop="20dp"
@@ -152,17 +152,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button5"
-        android:layout_width="220dp"
-        android:layout_height="57dp"
+        android:id="@+id/createAccountbutton"
+        android:layout_width="221dp"
+        android:layout_height="64dp"
         android:layout_marginTop="80dp"
         android:width="90dp"
         android:background="@drawable/greenbutton"
         android:text="Create An Account"
         android:textColor="#FF000000"
-        app:layout_constraintEnd_toEndOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="@+id/googleButton"
         app:layout_constraintHorizontal_bias="0.511"
-        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/facebookButton"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
     <TextView
@@ -172,8 +172,8 @@
         android:layout_marginTop="10dp"
         android:text="Already Have An Account"
         android:textColor="#93EF97"
-        app:layout_constraintEnd_toEndOf="@+id/button5"
-        app:layout_constraintStart_toStartOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintEnd_toEndOf="@+id/createAccountbutton"
+        app:layout_constraintStart_toStartOf="@+id/createAccountbutton"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountbutton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
